@@ -1,0 +1,8 @@
+---
+- hosts: Ubuntu 
+  become: yes
+  tasks:
+   - apt:
+      name: apache2
+      state: absent 
+

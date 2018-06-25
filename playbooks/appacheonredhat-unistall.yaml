@@ -1,0 +1,7 @@
+---
+- hosts: Redhat
+  become: yes
+  tasks:
+  - yum:
+     name: httpd 
+     state: absent 

@@ -1,0 +1,9 @@
+- hosts: all 
+  tasks:
+  - stat:
+      path: /home/ansible/myinvcopied
+    register: result
+
+  - debug:
+      msg: "Ansible When File Exists Example."
+    when: result.stat.exists

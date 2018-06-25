@@ -1,0 +1,5 @@
+- hosts: all
+  tasks:
+  - debug:
+      msg: "This is the expected system"
+    when: ansible_distribution == "RedHat" and ansible_distribution_version == "7.5"

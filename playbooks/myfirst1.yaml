@@ -1,0 +1,6 @@
+---
+- hosts: Ubuntu 
+  tasks: 
+  # ansible all -m ping
+  - name: This task will ping
+    ping:

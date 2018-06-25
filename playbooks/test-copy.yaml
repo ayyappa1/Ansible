@@ -1,0 +1,8 @@
+---
+- hosts: Ubuntu 
+  become: yes
+  tasks:
+  - name: copy module
+    copy:
+     src: /home/ansible/myinv
+     dest: /home/ansible/myinvcopied

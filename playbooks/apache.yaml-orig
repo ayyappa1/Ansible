@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - yum:
+     name: httpd
+     state: absent 
+    when: ansible_distribution == "RedHat"
+  - apt:
+     name: apache2
+     state: absent 
+    when: ansible_distribution == "Ubuntu"

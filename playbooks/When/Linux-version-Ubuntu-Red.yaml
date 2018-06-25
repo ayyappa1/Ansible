@@ -1,0 +1,5 @@
+- hosts: all
+  tasks:
+  - debug:
+      msg: "This is the expected system"
+    when: ansible_distribution == "RedHat" or ansible_distribution == "Ubuntu"
